@@ -1,0 +1,179 @@
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: none;
+}
+
+body{
+  font-family:'ITC New Baskerville Std';
+  }
+
+/* Separación */
+
+.form_wrap{
+  display: flex;
+}
+
+/* Información */
+
+.contentinfo{
+  width: 68%;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: url('../Images/imagen-attraction.png')no-repeat center top;
+  background-size: cover;
+  background-position: center center;
+
+
+}
+
+.info_title{
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.info_title h2{
+  font-size: 32px;
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 150px;
+}
+
+.info_title h3{
+  font-size: 40px;
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 70px;
+}
+
+.info_title h4{
+  font-size: 12px;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.info_title h5{
+  font-size: 15px;
+  text-align: left;
+  margin-left: 50px;
+  margin-bottom: 300px;
+}
+/* Formulario */
+form.contentformulario{
+  width: 32%;
+  padding: 30px 40px;
+}
+
+form.contentformulario{
+  background: url('../Images/Trazado 171.png') no-repeat center top;
+  background-size: cover;
+  background-position: center center;
+
+}
+
+form.contentformulario h2{
+  font-family: 'ITC New Baskerville Std';
+  font-size: 41px;
+  color: #0A333D;
+  margin-bottom: 30px;
+}
+
+form.contentformulario .user_info{
+  display: flex;
+  flex-direction: column;
+}
+
+form.contentformulario label{
+  font-weight: 600px;
+
+  font-family: 'Akzidenz-Grotesk BQ';
+  color: #0A333D;
+
+}
+
+form.contentformulario input{
+  width: 100%;
+  padding: 8px 0px 5px;
+  margin-bottom: 20px;
+  margin-top: 25px;
+
+
+  background-color: #BDCCC7;
+  border: none;
+  border-bottom: 2px solid #707070;
+}
+
+form.contentformulario input[type="submit"]{
+  width: 100%;
+  padding: 20px;
+
+
+  border-color: #707070;
+  background-color: #0A333D;
+
+  font-family: 'ITC New Baskerville Std';
+  color: #fff;
+
+}
+
+
+/* Ventana de validación */
+.modal_wrap{
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mensaje_modal{
+  background: #fff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  width: 400px
+  padding: 30px 20px 15px;
+}
+
+.mensaje_modal h3{
+  text-align: center;
+  font-family: 'Ubuntu';
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.mensaje_modal h3:after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #C5C5C5;
+  margin: 10px 0px 15px;
+}
+
+.mensaje_modal #btnClose{
+  display: inline-block;
+  padding: 3px 10px;
+  margin-top: 10px;
+
+  background: #E25151;
+  color: #fff;
+  border: 2px solid #B14141;
+  cursor: pointer;
+
+  float: right;
+}
